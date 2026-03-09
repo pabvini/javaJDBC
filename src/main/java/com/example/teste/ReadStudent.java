@@ -5,7 +5,7 @@ import java.sql.*;
 public class ReadStudent {
 
     public static void getAllStudent(){
-        String sql = "SELECT * FROM students";
+        String sql = "SELECT * FROM students;";
 
         try (Connection conn = ConnectionJDBC.getConnection();
             Statement stmt = conn.createStatement();

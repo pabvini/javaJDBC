@@ -4,7 +4,7 @@ import java.sql.*;
 
 public class CreateStudent {
     public static void insertStudent(String name, int age, String email){
-        String sql = "INSERT INTO students(name, age, email) VALUES(?, ?, ?)";
+        String sql = "INSERT INTO students(name, age, email) VALUES(?, ?, ?);";
 
         try(Connection conn = ConnectionJDBC.getConnection();
             PreparedStatement stmt = conn.prepareStatement(sql);){

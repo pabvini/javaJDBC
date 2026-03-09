@@ -2,16 +2,15 @@ package com.example.teste;
 
 import java.sql.*;
 
-public class UpdateStudent {
+public class DeleteStudent {
 
-    public static void updateStudent(int id, String newEmail){
-        String sql = "UPDATE students SET email = ? WHERE id = ?;";
+    public static void deleteStudent(int id){
+        String sql = "DELETE FROM students WHERE id = ?;";
 
         try (Connection conn = ConnectionJDBC.getConnection();
             PreparedStatement stmt = conn.prepareStatement(sql)){
 
-            stmt.setString(1, newEmail);
-            stmt.setInt(2, id);
+            stmt.setInt(1, id);
 
             int rows = stmt.executeUpdate();
 
