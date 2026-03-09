@@ -1,7 +1,6 @@
 package com.example.teste;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
+import java.sql.*;
 
 public class CreateStudent {
     public static void insertStudent(String name, int age, String email){
