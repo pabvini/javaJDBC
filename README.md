@@ -6,3 +6,4 @@ Este exercicio utiliza a entidade `Students` para aprender conceitos de Java e c
 - Adiciona um estudante no banco de dados
 - Ver todos os estudantes cadastrados
 - Mudar o email dos estudantes cadastrados
+- Deletar estudantes do banco de dados
