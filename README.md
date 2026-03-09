@@ -5,3 +5,4 @@ Este exercicio utiliza a entidade `Students` para aprender conceitos de Java e c
 # Funcionalidades
 - Adiciona um estudante no banco de dados
 - Ver todos os estudantes cadastrados
+- Mudar o email dos estudantes cadastrados
